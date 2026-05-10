@@ -19,11 +19,9 @@
 - **Variância (Idade):** 255,5371
 - **Variância (Custo):** 564932,6942
 - **Correlação (r):** 0,9879
-- 
-**Formula:**
+-**Formula:**
 $$r = \frac{cov(X, Y)}{\sqrt{var(X) \cdot var(Y)}}$$
-**Substituindo:**
+-**Substituindo:**
 $$r = \frac{11869,71}{\sqrt{(255,5371) \cdot (564932,6942)}}$$
-
-**Resultado Final:**
+-**Resultado Final:**
 $$r = 0,9879$$
