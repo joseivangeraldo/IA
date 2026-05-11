@@ -87,4 +87,60 @@ A inclinação é o "coração" da equação da reta ($y = mx + b$).
 - Se $m$ fosse **zero**, a idade não teria influência nenhuma no custo.
 
 ---
-*Notas: Cálculos baseados no módulo de Cálculos na Regressão Linear.*
+
+# 📊 Regressão Linear: Cálculo da Interceptação
+
+Este repositório contém as anotações e fórmulas fundamentais para entender o cálculo da interceptação em modelos de Regressão Linear Simples.
+
+---
+
+## 📖 Conceitos Básicos
+
+A equação da reta na regressão linear é definida como:
+**y = mx + b**
+
+Onde:
+- **y**: Variável dependente (ex: Custo)
+- **x**: Variável independente (ex: Idade)
+- **m**: Inclinação da reta (Slope)
+- **b**: Interceptação (Intercept) - O ponto onde a reta cruza o eixo Y.
+
+---
+
+## 🧮 Fórmula da Interceptação (b)
+
+Para encontrar o valor de **b**, isolamos o termo na equação utilizando as médias aritméticas de $x$ e $y$:
+
+$$b = \bar{y} - m\bar{x}$$
+
+**Definições:**
+- $\bar{y}$: Média de $y$
+- $\bar{x}$: Média de $x$
+- $m$: Inclinação (Slope)
+
+---
+
+## 📝 Exemplo Prático (Dados da Aula)
+
+Com base no exemplo de **Idade vs Custo** apresentado:
+
+| Parâmetro | Valor |
+| :--- | :--- |
+| Média de Custo ($\bar{y}$) | **2104,182** |
+| Média de Idade ($\bar{x}$) | **42,09** |
+| Inclinação ($m$) | **46,45** |
+
+### Resolução do Cálculo:
+1. $b = 2104,182 - (46,45 \times 42,09)$
+2. $b = 2104,182 - 1955,1245$
+3. **$b = 149,0577$**
+
+---
+
+## 🚀 Próximos Passos
+O curso segue para a implementação prática em:
+- Lab: Regressão Linear em Python
+- Lab: Regressão Linear com StatsModels
+
+---
+*Notas de estudo extraídas da aula "Cálculos na Regressão Linear".*
