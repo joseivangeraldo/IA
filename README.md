@@ -37,26 +37,6 @@ $$r = \frac{cov(X, Y)}{\sqrt{var(X) \cdot var(Y)}}$$
 
 > ### 💡 Resultado Final
 > **$r = 0,9879$**
-> 
-> *Interpretação:* Existe uma **correlação positiva muito forte** (próxima a 1), indicando que o custo aumenta proporcionalmente à idade.
-
----
-
-## 💻 Implementação em Python
-Para automatizar este cálculo, utilizamos a biblioteca `pandas`:
-
-```python
-import pandas as pd
-
-# Criando o dataset
-data = {'Idade': [18, 23, 25, 33, 34, 43, 48, 51, 58, 63, 67],
-        'Custo': [871, 1100, 1393, 1654, 1915, 2100, 2356, 2698, 2959, 3000, 3100]}
-
-df = pd.DataFrame(data)
-
-# Calculando a correlação
-correlacao = df['Idade'].corr(df['Custo'])
-print(f"O coeficiente de Pearson é: {correlacao:.4f}")
 
 # 📈 Relatório de Análise: Inclinação da Reta (Slope)
 > **Tópico:** Regressão Linear Simples | **Parte:** II - Coeficientes
