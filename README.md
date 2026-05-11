@@ -143,4 +143,80 @@ O curso segue para a implementação prática em:
 - Lab: Regressão Linear com StatsModels
 
 ---
-*Notas de estudo extraídas da aula "Cálculos na Regressão Linear".*
+# Conteúdo para o arquivo README.md baseado na imagem da aula de Regressão Linear
+
+readme_content = """# Formação Completa em Inteligência Artificial 2026
+## Módulo: Regressão Linear
+
+Este repositório contém anotações e exemplos práticos sobre os conceitos fundamentais de Regressão Linear, focados em previsões baseadas em dados históricos.
+
+---
+
+### 📈 Conceito de Previsão
+
+A Regressão Linear é utilizada para prever o valor de uma variável dependente (Custo) com base em uma variável independente (Idade).
+
+#### A Equação da Reta
+Para realizar a previsão, aplicamos a seguinte fórmula matemática:
+
+<div align="center">
+  <h3><code>P = b + (m * v)</code></h3>
+</div>
+
+Onde:
+- **`P`**: Previsão (valor que queremos encontrar).
+- **`b`**: Interceptação (**149,0577**) - O valor base quando a variável independente é zero.
+- **`m`**: Inclinação (**46,45**) - O coeficiente que determina o quanto o custo aumenta por unidade de idade.
+- **`v`**: Variável independente (neste exemplo, a **Idade**).
+
+---
+
+### 📝 Exemplo Prático de Cálculo
+No exemplo da aula, calculamos a previsão de custo para uma pessoa de **54 anos**:
+
+1. **Definição das Variáveis:**
+   - $v = 54$ anos
+   - $b = 149,0577$
+   - $m = 46,45$
+
+2. **Cálculo:**
+   $$p = 149,0577 + (46,45 * 54)$$
+   $$p = 149,0577 + 2508,3$$
+
+3. **Resultado:**
+   $$p = 2657,355$$
+
+O custo previsto para uma pessoa de 54 anos é de **2657,355**.
+
+---
+
+### 📊 Base de Dados (Amostra)
+Os dados abaixo foram utilizados para construir o modelo de previsão:
+
+| Idade (v) | Custo (P) |
+| :---: | :---: |
+| 18 | 871 |
+| 23 | 1100 |
+| 25 | 1393 |
+| 33 | 1654 |
+| 34 | 1915 |
+| 43 | 2100 |
+| 48 | 2356 |
+| 51 | 2698 |
+| 67 | 3100 |
+
+---
+
+### 🚀 Progresso do Curso
+- [x] 21. Cálculos na Regressão Linear
+- [ ] 22. Lab: Regressão Linear em Python
+- [ ] 23. Lab: Regressão Linear com StatsModels
+- [ ] 25. Naive Bayes
+- [ ] 28. Árvores de Decisão
+
+---
+*Documentação gerada para auxiliar no estudo de Machine Learning e Inteligência Artificial.*
+"""
+
+with open('README_Regressao_Linear.md', 'w', encoding='utf-8') as f:
+    f.write(readme_content)
