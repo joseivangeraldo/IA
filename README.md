@@ -57,3 +57,54 @@ df = pd.DataFrame(data)
 # Calculando a correlação
 correlacao = df['Idade'].corr(df['Custo'])
 print(f"O coeficiente de Pearson é: {correlacao:.4f}")
+
+# 📈 Relatório de Análise: Inclinação da Reta (Slope)
+> **Tópico:** Regressão Linear Simples | **Parte:** II - Coeficientes
+
+---
+
+## 🎯 Objetivo
+Após determinar a força da relação com o Coeficiente de Pearson ($r$), o próximo passo é calcular a **Inclinação ($m$)**. Este valor define o quanto a variável dependente (Custo) aumenta para cada unidade adicional da variável independente (Idade).
+
+---
+
+## 📐 Fundamentação Matemática
+
+A inclinação da reta de regressão é calculada utilizando a correlação e os desvios padrão das duas variáveis.
+
+### Fórmula Utilizada
+$$m = r \cdot \left( \frac{S_y}{S_x} \right)$$
+
+**Onde:**
+* **$m$**: Inclinação (Slope).
+* **$r$**: Coeficiente de correlação de Pearson.
+* **$S_y$**: Desvio padrão da variável dependente (Custo).
+* **$S_x$**: Desvio padrão da variável independente (Idade).
+
+---
+
+## 📝 Desenvolvimento do Cálculo
+Com base nos dados extraídos da análise:
+
+1. **Parâmetros Identificados:**
+    * $r = 0,9879$
+    * $S_y = 751,6200$
+    * $S_x = 15,9855$
+
+2. **Aplicação na Fórmula:**
+    $$m = 0,9879 \cdot \left( \frac{751,6200}{15,9855} \right)$$
+
+> ### 💡 Resultado Final
+> **$m = 46,45$**
+>
+> *Interpretação:* Para este modelo, cada **1 ano** a mais de idade resulta em um aumento estimado de **46,45 unidades de custo**.
+
+---
+
+## 🔍 O que este valor representa?
+A inclinação é o "coração" da equação da reta ($y = mx + b$). 
+- Se $m$ é **positivo**, a reta sobe (relação direta).
+- Se $m$ fosse **zero**, a idade não teria influência nenhuma no custo.
+
+---
+*Notas: Cálculos baseados no módulo de Cálculos na Regressão Linear.*
