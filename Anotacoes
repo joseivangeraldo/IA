@@ -1,0 +1,20 @@
+NAIVE BAYES:
+A proposta é utilizar as probalidades para criar um modelo de machine learning.
+
+Olha as chances das classes serem influenciadas pelo atributo
+Duas formas mais conhecidas:
+Naive Bayes
+Redes Baysianas
+
+Probabilidade condicional da classe:
+Exemplo de golfe, se vou jogar golfe ou não.
+Fazer construção do modelo.
+
+Probabilidade condicional dos atributos(colunas) com a classe.
+Com o modelo faz-se a previsão.Um calculo para o Yes e outro pra no
+
+SEÇÃO3 Unidade25
+
+
+
+
